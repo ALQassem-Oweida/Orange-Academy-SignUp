@@ -147,19 +147,7 @@
 
             }
 
-
-
-            // let email = document.getElementById('inputMail').value, pwd = document.getElementById('inputPass').value;
-   
-            // formData[0].inputPass=inputField.value;
-
-            // // if(inputMail==(OrangeUsersEmail) && inputPass==(OrangeUsersPass) ){
-            // //     window.open("https://www.geeksforgeeks.orghttps://yo.orange.jo/orange-coding-academy", "_blank");
-            // // }else{
-            // //     document.getElementById('pass_check').style.display = "block"
-            // //     document.getElementById('pass_check').style.fontWeight = "bold"
-            // // }
-
+ //************* for Pass and Email matching and localStorege/Sessionstorage User_data_Store  *****************************
 
         let ToF = false;
         let uIndex = null;
@@ -174,7 +162,7 @@
        
         if (ToF && formData[uIndex].Pass==inputPass) {
 
-        //   document.getElementById("LogV").innerHTML= "logged in successfuly ";
+          document.getElementById("LogV").innerHTML= "logged in successfuly ";
           sessionStorage.Mail =formData[uIndex].Mail;
           sessionStorage.Pass =formData[uIndex].Pass;
           window.open("https://yo.orange.jo/orange-coding-academy" ,"_blank" );
@@ -193,22 +181,13 @@
         }
         e.preventDefault();
 
-
-
-
-
-
-
-
-
         }
 
 
-
 //**************************************** The Eye thing ******************************************************************************************************
+
         const togglePassword = document.querySelector('#togglePassword');
         const password = document.querySelector('#xPass');
-
         togglePassword.addEventListener('click', function (e) {
             // toggle the type attribute
             const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -217,18 +196,8 @@
             this.classList.toggle('fa-eye-slash');
         });
 
-
-        // document.getElementById('B1').onclick = function () { NewTab() }
-        // function NewTab() {
-        //     if(inputMail.match(OrangeUsersEmail) && inputPass.match(OrangeUsersPass) ){
-        //         window.open("https://www.geeksforgeeks.orghttps://yo.orange.jo/orange-coding-academy", "_blank");
-        //     }return
-            
-        // }
-
-
-
-
+//**************************************************************************************************************************************************************
+    
     </script>
 
 </body>

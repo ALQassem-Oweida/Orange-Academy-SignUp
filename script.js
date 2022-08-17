@@ -74,7 +74,7 @@ function Validation() {
         formData.push({ Mail:inputMail, Pass:inputPass, Tell:inputTel});
         localStorage.setItem('formData', JSON.stringify(formData));
         window.open("./index_log in.html" );
-        // localStorage.setItem('userData',JSON.stringify(usersData))
+ 
 
     }
 
